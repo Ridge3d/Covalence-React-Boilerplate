@@ -1,18 +1,16 @@
 import React, { Component, Fragment } from "react";
 import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
-import HelloWorld from "./hello";
-import GoodbyeWorld from "./goodbye";
-import NavBar from "./navbar";
+import FrontPage from "./frontpage";
+import PostPage from "./postpage";
 
 class Navigation extends Component {
   render() {
     return (
       <Router>
         <Fragment>
-          <Link to="/goodbye">Goodbye</Link>
           <Switch>
-            <Route exact path="/" component={HelloWorld} />
-            <Route path="/goodbye" component={GoodbyeWorld} />
+            <Route exact path="/" component={FrontPage} />
+            <Route exact path="/post" component={PostPage} />
           </Switch>
         </Fragment>
       </Router>
