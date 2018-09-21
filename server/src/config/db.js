@@ -3,9 +3,9 @@ import mysql from "mysql";
 let pool = mysql.createPool({
   connectionLimit: 10,
   host: "localhost",
-  user: "blogfun",
-  password: "blahblah",
-  database: "blog"
+  user: "The_Hiking_Swede",
+  password: "MNloon3d",
+  database: "The_Hiking_Swede"
 });
 
 function executeQuery(sql, args = []) {
