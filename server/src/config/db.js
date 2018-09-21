@@ -52,7 +52,7 @@ function generatePlaceholders(args = []) {
   if (args.length > 0) {
     for (let i = 0; i < args.length; i++) {
       if (i === args.length - 1) {
-        // if we are on the last argument in the array
+        // if we are on the last argument in the array!
         placeholders += "?";
       } else {
         placeholders += "?,";
